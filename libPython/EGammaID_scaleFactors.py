@@ -315,14 +315,14 @@ def doEGM_SFs(filein, lumi, axis = ['pT','eta'] ):
 
     fileWithEff.close()
 ### massage the numbers a bit
-    # effGraph.symmetrizeSystVsEta()# ----- REMOVING SYMM ETA AS DISCUSSED WITH RICCARDO
+    effGraph.symmetrizeSystVsEta()# ----- REMOVING SYMM ETA AS DISCUSSED WITH RICCARDO
     effGraph.combineSyst()
 
     print " ------------------------------- "
 
     customEtaBining = []
     customEtaBining.append( (0.000,0.800))
-    customEtaBining.append( (0.800,1.444))
+    customEtaBining.append( (0.800,1.566))
 #    customEtaBining.append( (1.444,1.566)) #gap region
     customEtaBining.append( (1.566,2.000))
     customEtaBining.append( (2.000,2.500))
